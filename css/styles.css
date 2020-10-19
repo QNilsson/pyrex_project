@@ -42,44 +42,37 @@
   }
 
   /*----------------TITLE----------------*/
+  .hero-image{
+	  background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url("/images/pyrex5.jpg");
+	  height:60%;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  position: relative;
+  }
 h1{
-	font-size:44px;
+	font-size:48px;
 }
   .title{
 	  font-family: 'Pacifico', cursive;
 	  text-align: center;
-	  margin:55 0 50 0;
-	  color:#ff414d;
+	  position: absolute;
+	  top:50%;
+	  left:50%;
+	  transform: translate(-50%, -50%);
+	
+	  color:white;
+	 
 	  
   }
    /*--------------------HOME PAGE CONTENT------------*/
- .rowHis{
-	display:flex;
-	margin:90 0 10 0;
-	display: -ms-flexbox;
-	align-items: flex-start;
-	flex-wrap: wrap;
-}
-
-.columnHistory{
-   flex:50%;
-   max-width: 50%;
-   padding:40px;
-   justify-content: center;
-   vertical-align: auto;
+  .row-history{
+	  display:flex;
+  }
+  .column-history{
+	  flex:33%;
+  }
   
-}
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-	.columnHistory {
-	  -ms-flex: 100%;
-	  flex: 100%;
-	  max-width: 100%;
-	}
-}
-#hisImag{
-	width:100%;
-}
 
   /*------------------COLLECTIONS GALLERY--------------*/
   .row {
