@@ -24,7 +24,7 @@
 	  padding: 14px 16px;
 	  text-decoration: none;
 	  font-size: 17px;
-	  font-family: 'Pacifico', cursive;
+	  ont-family: 'Crimson Text',serif;
 
   }
 
@@ -60,7 +60,6 @@ h1{
 	  top:50%;
 	  left:50%;
 	  transform: translate(-50%, -50%);
-	
 	  color:white;
 	 
 	  
@@ -68,15 +67,34 @@ h1{
    /*--------------------HOME PAGE CONTENT------------*/
   .row-history{
 	  display:flex;
+	  margin-top:60px;
   }
   .column-history{
 	  flex:33%;
+  }
+
+
+  .photo-row{
+	  display:flex;
+	  margin-top:60px;
+  }
+  .photo-column{
+	  flex:33%;
+	  max-width:33%;
+	  height:300px;
+	  padding: 0 4px;
+
+
+	  
+  }
+  .photo-column img{
+	  width:100%;
+	  height: auto;
   }
   
 
   /*------------------COLLECTIONS GALLERY--------------*/
   .row {
-	
 	display: -ms-flexbox; /* IE10 */
 	display: flex;
 	-ms-flex-wrap: wrap; /* IE10 */
