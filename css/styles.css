@@ -256,3 +256,22 @@ img {
 		text-align: left;
 	}
 }
+
+/*-------------------------------FOOTER-----------------------*/
+footer{
+	font-family: 'Crimson Text', serif;
+	letter-spacing: .08rem;
+	left:0;
+	bottom:0;
+	width:100%;
+	background-color:#1aa6b7;
+	color:white;
+	text-align: center;
+	padding:10px;
+}
+
+#social{
+	font-size:22px;
+	color:white;
+	text-decoration: none;
+}
