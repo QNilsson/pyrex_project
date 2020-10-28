@@ -172,9 +172,9 @@ section {
 	font-size: 0.6rem;
 }
 
-.popular > * {
+/* .popular > * {
 	flex: 1 1 100%;
-}
+} */
 
 .popular .cta {
 	align-self: flex-end;
