@@ -3,11 +3,19 @@
 }
 
 body {
-	margin: 0;
+	margin: auto;
 	font-family: Arial;
 	background-color: #d9ecf2;
 	font-family: 'Crimson Text', serif;
 	font-size: 18px;
+}
+.page-container{
+	position: relative;
+	min-height: 100vh;
+}
+
+.content-wrap{
+	padding-bottom: 2.5rem;
 }
 /*-------------------NAV---------------*/
 .topnav {
@@ -53,6 +61,7 @@ body {
 }
 h1 {
 	font-size: 48px;
+	font-family: 'Pacifico', cursive;
 }
 .title {
 	font-family: 'Pacifico', cursive;
@@ -102,6 +111,7 @@ section {
 
 .popular h4 {
 	font-family: 'Pacifico', cursive;
+	text-align: center;
 	font-weight: 600;
 	color: #56ceba;
 	font-size: 1.3rem;
@@ -130,6 +140,7 @@ section {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+	
 }
 
 .popular:hover {
@@ -142,7 +153,6 @@ section {
 .popular .cta {
 	color: #f56a79;
 }
-
 .popular1:hover {
 	border: 2px solid #f56a79;
 	cursor: pointer;
@@ -257,17 +267,61 @@ img {
 	}
 }
 
+/*----------------------------BUTTERPRINT PAGE-----------------------------*/
+.row-butter{
+	margin: 0 50px 0 50px;
+	text-align: center;
+}
+
+.butter-images-row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+	
+}
+
+/* Create four equal columns that sits next to each other */
+.butter-images-col {
+	-ms-flex: 50%; /* IE10 */
+	flex: 50%;
+	max-width: 50%;
+	padding: 0 15px;
+	
+}
+.butter-col-content{
+	text-align: left;
+}
+
+.butter-images-col img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	border-radius:20%;
+	border:2px solid white;
+}
+
+img {
+	width: 100%;
+}
+
 /*-------------------------------FOOTER-----------------------*/
 footer{
-	font-family: 'Crimson Text', serif;
-	letter-spacing: .08rem;
-	left:0;
-	bottom:0;
 	width:100%;
+	bottom:0;
 	background-color:#1aa6b7;
+	margin:auto;
+	height:43px;
+	position: absolute;
+}
+.footer-content{
 	color:white;
+	font-family: 'Crimson Text', serif;
 	text-align: center;
-	padding:10px;
+	margin:auto;
+	letter-spacing: .08rem;
+	padding-top:8px;
 }
 
 #social{
