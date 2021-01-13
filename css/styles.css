@@ -204,6 +204,9 @@ section {
 }
 
 /*------------------COLLECTIONS GALLERY--------------*/
+.col-title{
+	color:black;
+}
 .row {
 	display: -ms-flexbox; /* IE10 */
 	display: flex;
