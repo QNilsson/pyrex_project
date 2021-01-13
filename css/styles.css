@@ -62,6 +62,8 @@ body {
 h1 {
 	font-size: 48px;
 	font-family: 'Pacifico', cursive;
+	color:white;
+	
 }
 .title {
 	font-family: 'Pacifico', cursive;
@@ -266,11 +268,53 @@ img {
 		text-align: left;
 	}
 }
+/*----------------------------ANIMATIONS----------------------------------*/
 
+.fade-in {
+	animation: fadeIn ease 5s;
+	-webkit-animation: fadeIn ease 5s;
+	-moz-animation: fadeIn ease 5s;
+	-o-animation: fadeIn ease 5s;
+	-ms-animation: fadeIn ease 5s;
+	}
+	@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+	}
+	
+	@-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+	}
+	
+	@-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+	}
+	
+	@-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+	}
+	
+	@-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+	}
 /*----------------------------BUTTERPRINT PAGE-----------------------------*/
+
+.vertical-center{
+	margin:0;
+	position: absolute;
+	top:50%;
+	-ms-transform: translateY(-50%);
+	transform:  translateY((-50%));
+}
 .row-butter{
 	margin: 0 50px 0 50px;
 	text-align: center;
+	
+
 }
 
 .butter-images-row {
@@ -297,7 +341,45 @@ img {
 .butter-images-col img {
 	margin-top: 8px;
 	vertical-align: middle;
+	width: 80%;
+	border-radius:20%;
+	border:2px solid white;
+}
+
+img {
 	width: 100%;
+}
+/*-----------------SPRING BLOSSOM -----------------------*/
+.row-blossom{
+	margin: 0 50px 0 50px;
+	text-align: center;
+}
+
+.blossom-images-row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+	
+}
+
+/* Create four equal columns that sits next to each other */
+.blossom-images-col {
+	-ms-flex: 50%; /* IE10 */
+	flex: 50%;
+	max-width: 50%;
+	padding: 0 15px;
+	
+}
+.blossom-col-content{
+	text-align: left;
+}
+
+.blossom-images-col img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 70%;
 	border-radius:20%;
 	border:2px solid white;
 }
