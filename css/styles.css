@@ -210,7 +210,10 @@ section {
 
 /*---------------------------ABOUT US--------------------*/
 .about-image {
-	background-image: linear-gradient(rgba(82, 79, 79, 0.5), rgba(53, 52, 53, 0.5)),
+	background-image: linear-gradient(
+			rgba(82, 79, 79, 0.5),
+			rgba(53, 52, 53, 0.5)
+		),
 		url('/images/display.jpg');
 	height: 100%;
 	background-position: center;
@@ -227,7 +230,6 @@ section {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
-
 }
 
 .about-title p {
@@ -246,16 +248,80 @@ section {
 	border-radius: 10px;
 	background-color: rgb(255, 255, 255, 0.7);
 }
-.outro{
-	padding:100px;
+.outro {
+	padding: 100px;
 	font-family: 'Pacifico';
 	font-size: 22px;
 	text-align: center;
 }
-.instagram{
-	display:flex;
+.instagram {
+	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+/*-------------------CONTACT ----------------*/
+input[type='text'],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	font-family: 'Crimson Text', serif;
+}
+
+input[type='submit'] {
+	background-color: #1aa6b7;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 18px;
+	font-family: 'Crimson Text', serif;
+}
+
+input[type='submit']:hover {
+	background-color: #56ceba;
+	color: white;
+}
+#connect {
+	font-family: 'Pacifico', cursive;
+}
+.contact {
+	width: 65vw;
+	margin: auto;
+}
+
+.form {
+	padding-top: 50px;
+}
+.contact-social {
+	background-color: #f56a79;
+	margin-top: 100px;
+	padding-bottom: 200px;
+	padding-top: 30px;
+}
+.social-content {
+	margin: auto;
+	width: 65vw;
+	color: white;
+}
+.social-icons {
+	padding-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+#social-icon{
+	font-size:40px;
+	color:white;
+}
+#social-icon:hover{
+	color:#56ceba;
 }
 /*------------------COLLECTIONS GALLERY--------------*/
 .col-title {
@@ -494,7 +560,7 @@ footer {
 	background-color: #1aa6b7;
 	margin: auto;
 	height: 43px;
-	position: absolute;
+	position: relative;
 }
 
 .footer-content {
