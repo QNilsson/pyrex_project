@@ -6,3 +6,7 @@ function myFunction() {
 	  x.className = "topnav";
 	}
   }
+
+  var redirect = function(){
+	document.location.href="redirect.html"
+ }
