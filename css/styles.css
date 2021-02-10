@@ -108,7 +108,7 @@ a {
 section {
 	margin: 0 auto;
 	text-align: center;
-	padding: 50px;
+	padding-top: 150px;
 }
 
 .popular a {
@@ -316,27 +316,25 @@ input[type='submit']:hover {
 	display: flex;
 	justify-content: space-between;
 }
-#social-icon{
-	font-size:40px;
-	color:white;
+#social-icon {
+	font-size: 40px;
+	color: white;
 }
-#social-icon:hover{
-	color:#56ceba;
+#social-icon:hover {
+	color: #56ceba;
 }
-button{
+button {
 	background-color: #56ceba;
 	padding: 6px 20px 6px 20px;
 	font-family: 'Crimson Text', serif;
-	font-size:18px;
-	border:0;
-	color:white;
+	font-size: 18px;
+	border: 0;
+	color: white;
 	border-radius: 10%;
-
 }
-button:hover{
-	transform:scale(1.05);
-	cursor:pointer;
-	
+button:hover {
+	transform: scale(1.05);
+	cursor: pointer;
 }
 /*------------------COLLECTIONS GALLERY--------------*/
 .col-title {
@@ -366,12 +364,76 @@ button:hover{
 	margin-top: 8px;
 	vertical-align: middle;
 	width: 100%;
+	cursor: pointer;
 }
 
 img {
 	width: 100%;
 }
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding: 15px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+	margin: auto;
+	display: block;
+	padding-top:10px;
+	width: 80%;
+	max-width: 700px;
+}
+#caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: white;
+	padding: 10px 0;
+	height: 150px;
+}
+.modal-content #caption {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+	from {
+		-webkit-transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+	}
+}
 
+@keyframes zoom {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+.close {
+	color: white;
+	float: right;
+	font-size: 45px;
+}
+.close:hover,
+.close:focus {
+	color: blue;
+	text-decoration: none;
+	cursor: pointer;
+}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
 	.column {
@@ -502,8 +564,6 @@ img {
 	padding: 0 4px;
 }
 
-
-
 /* Create four equal columns that sits next to each other */
 .butter-images-col {
 	-ms-flex: 50%;
@@ -529,7 +589,6 @@ img {
 		-ms-flex: 100%;
 		flex: 100%;
 		max-width: 100%;
-	
 	}
 }
 
@@ -578,7 +637,6 @@ img {
 		-ms-flex: 100%;
 		flex: 100%;
 		max-width: 100%;
-	
 	}
 }
 
