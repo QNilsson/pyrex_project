@@ -37,38 +37,57 @@
 	<div class="content-wrap">
 <div class="row">
 	<div class="column">
-		<img id="myImg" src="/images/pyrex8.jpg" alt="This is a collection of butterprint bowls" />
-		<div id="myModal" class="modal">
-			<span class="close">&times;</span>
-			<img class="modal-content" id="img01">
-			<div id="caption">This is a set of butterprint bowls</div>
-		</div><!--end my modal-->
-		<img src="/images/pyrex7.jpg" alt="" />
+		<img src="/images/pyrex8.jpg" onclick="openLightbox();toSlide(1)" alt="This is a collection of butterprint bowls" />
+		<img src="/images/pyrex7.jpg" onclick="openLightbox();toSlide(2)"alt="" />
 	
 		
 		
 	</div>
 	<div class="column">
-		<img src="/images/pyrex9.jpg" alt="" />
-		<img src="/images/pyrex13.jpg" alt="" />
+		<img src="/images/pyrex9.jpg" onclick="openLightbox();toSlide(3)" alt="" />
+		<img src="/images/pyrex13.jpg" onclick="openLightbox();toSlide(4)" alt="" />
 		
 		
 	</div>
 	<div class="column">
-		<img src="/images/pyrex5.jpg" alt="" />
-		<img src="/images/pyrex14.jpg" alt="" />
+		<img src="/images/pyrex5.jpg" onclick="openLightbox();toSlide(5)" alt="" />
+		<img src="/images/pyrex14.jpg" onclick="openLightbox();toSlide(6)" alt="" />
 		
 	
 		
 	</div>
-	<!-- <div class="column">
-		<img src="/images/pyrex5.jpg" alt="" />
-		<img src="/images/pyrex6.jpg" alt="" />
-		<img src="/images/pyrex7.jpg" alt="" />
-		<img src="/images/pyrex5.jpg" alt="" />
-		<img src="/images/pyrex6.jpg" alt="" />
-		<img src="/images/pyrex7.jpg" alt="" />
-	</div> -->
+	<div id="Lightbox" class="modal">
+        <span class="close pointer" onclick="closeLightbox()">&times;</span>
+        <div class="modal-content">
+            <div class="slide">
+                <img src="/images/pyrex8.jpg" class="image-slide" />
+				<figcaption>This is a collection of butterprint bowls. They are also known as 'Cinderalla print'. This design was one of the first to be printed on Pyrex</figcaption>
+            </div>
+            <div class="slide">
+                <img src="/images/pyrex7.jpg" class="image-slide" />
+				<figcaption></figcaption>
+            </div>
+            <div class="slide">
+                <img src="/images/pyrex9.jpg" class="image-slide" />
+				<figcaption>This is the Pressed Flowers colleciton. It was released in 1957 as a promotional pattern. This is a rare set to find so you will be lucky if you come across one.</figcaption>
+            </div>
+            <div class="slide">
+                <img src="/images/pyrex13.jpg" class="image-slide" />
+				<figcaption>This is a cute pyrex</figcaption>
+            </div>
+            <div class="slide">
+                <img src="/images/pyrex5.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="/images/pyrex14.jpg" class="image-slide" />
+            </div>
+           
+            <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div><!--end light box-->
+	
+	
 </div>
 </div>
 <footer>
@@ -93,27 +112,6 @@
 		</div>
 </footer>
 </div>
-<script>
-	// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-	</script>
 </body>
 </html>
