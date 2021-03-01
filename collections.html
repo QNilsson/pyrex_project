@@ -24,95 +24,132 @@
 		<script src="index.js"></script>
 	</head>
 	<body>
-<div class="topnav" id="myTopnav">
-	<a href="./index.html">Home</a>
-	<a href="./about.html">Our Story</a>
-	<a href="#collections">Collections</a>
-	<a href="./contact.html">Contact us</a>
-	<a href="javascript:void(0):" class="icon" onclick="myFunction()">
-		<i class="fa fa-bars"></i
-	></a>
-</div>
-<div class="page-container">
-	<div class="content-wrap">
-<div class="row">
-	<div class="column">
-		<img src="/images/pyrex8.jpg" onclick="openLightbox();toSlide(1)" alt="This is a collection of butterprint bowls" />
-		<img src="/images/pyrex7.jpg" onclick="openLightbox();toSlide(2)"alt="" />
-	
-		
-		
-	</div>
-	<div class="column">
-		<img src="/images/pyrex9.jpg" onclick="openLightbox();toSlide(3)" alt="" />
-		<img src="/images/pyrex13.jpg" onclick="openLightbox();toSlide(4)" alt="" />
-		
-		
-	</div>
-	<div class="column">
-		<img src="/images/pyrex5.jpg" onclick="openLightbox();toSlide(5)" alt="" />
-		<img src="/images/pyrex14.jpg" onclick="openLightbox();toSlide(6)" alt="" />
-		
-	
-		
-	</div>
-	<div id="Lightbox" class="modal">
-        <span class="close pointer" onclick="closeLightbox()">&times;</span>
-        <div class="modal-content">
-            <div class="slide">
-                <img src="/images/pyrex8.jpg" class="image-slide" />
-				<figcaption>This is a collection of butterprint bowls. They are also known as 'Cinderalla print'. This design was one of the first to be printed on Pyrex</figcaption>
-            </div>
-            <div class="slide">
-                <img src="/images/pyrex7.jpg" class="image-slide" />
-				<figcaption></figcaption>
-            </div>
-            <div class="slide">
-                <img src="/images/pyrex9.jpg" class="image-slide" />
-				<figcaption>This is the Pressed Flowers pattern colleciton. It was released in 1957 as a promotional pattern. This is a rare set to find so you will be lucky if you come across one.</figcaption>
-            </div>
-            <div class="slide">
-                <img src="/images/pyrex13.jpg" class="image-slide" />
-				<figcaption>This is the Starburst pattern. It's original name was the Space Saver Casserole but consumers nicknamed it Starburst. It was introduced in 1960 and became a hit at parties. </figcaption>
-            </div>
-            <div class="slide">
-                <img src="/images/pyrex5.jpg" class="image-slide" />
-            </div>
-            <div class="slide">
-                <img src="/images/pyrex14.jpg" class="image-slide" />
-				<figcaption>This is the Friendship pattern collection. It was manufactured from 1971 to 1974 and included mixing bowls, a Cinderella bowl, a Refrigerator set, and a Round Casserole set. </figcaption>
-            </div>
-           
-            <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
-        </div>
-    </div><!--end light box-->
-	
-	
-</div>
-</div>
-<footer>
-	<div class="footer-content">
-		<span> &copy Quinn Nilsson 2020</span>
-		<a href="https://www.facebook.com/quinn.nilsson" target="_blank">
-			<i id="social" class="fab fa-facebook"></i
-		></a>
-		<a href="https://github.com/QNilsson" target="_blank"
-			><i id="social" class="fab fa-github"></i
-		></a>
-		<a
-			href="https://www.instagram.com/dogs.andsometimesquinn/"
-			target="_blank"
-			><i id="social" class="fab fa-instagram"></i
-		></a>
-		<a
-			href="https://www.linkedin.com/in/quinn-nilsson-236825132/"
-			target="_blank"
-			><i id="social" class="fab fa-linkedin"></i
-		></a>
+		<div class="topnav" id="myTopnav">
+			<a href="./index.html">Home</a>
+			<a href="./about.html">Our Story</a>
+			<a href="#collections">Collections</a>
+			<a href="./contact.html">Contact us</a>
+			<a href="javascript:void(0):" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i
+			></a>
 		</div>
-</footer>
-</div>
+		<div class="page-container">
+			<div class="content-wrap">
+				<div class="row">
+					<div class="column">
+						<img
+							src="/images/pyrex8.jpg"
+							onclick="openLightbox();toSlide(1)"
+							alt="This is a collection of butterprint bowls"
+						/>
+						<img
+							src="/images/pyrex7.jpg"
+							onclick="openLightbox();toSlide(2)"
+							alt=""
+						/>
+					</div>
+					<div class="column">
+						<img
+							src="/images/pyrex9.jpg"
+							onclick="openLightbox();toSlide(3)"
+							alt=""
+						/>
+						<img
+							src="/images/pyrex13.jpg"
+							onclick="openLightbox();toSlide(4)"
+							alt=""
+						/>
+					</div>
+					<div class="column">
+						<img
+							src="/images/pyrex5.jpg"
+							onclick="openLightbox();toSlide(5)"
+							alt=""
+						/>
+						<img
+							src="/images/pyrex14.jpg"
+							onclick="openLightbox();toSlide(6)"
+							alt=""
+						/>
+					</div>
+					<div id="Lightbox" class="modal">
+						<span class="close pointer" onclick="closeLightbox()">&times;</span>
+						<div class="modal-content">
+							<div class="slide">
+								<img src="/images/pyrex8.jpg" class="image-slide" />
+								<figcaption>
+									This is a collection of butterprint bowls. They are also known
+									as 'Cinderalla print'. This design was one of the first to be
+									printed on Pyrex
+								</figcaption>
+							</div>
+							<div class="slide">
+								<img src="/images/pyrex7.jpg" class="image-slide" />
+								<figcaption>
+									
+								</figcaption>
+							</div>
+							<div class="slide">
+								<img src="/images/pyrex9.jpg" class="image-slide" />
+								<figcaption>
+									This is the Pressed Flowers pattern colleciton. It was
+									released in 1957 as a promotional pattern. This is a rare set
+									to find so you will be lucky if you come across one.
+								</figcaption>
+							</div>
+							<div class="slide">
+								<img src="/images/pyrex13.jpg" class="image-slide" />
+								<figcaption>
+									This is the Starburst pattern. It's original name was the
+									Space Saver Casserole but consumers nicknamed it Starburst. It
+									was introduced in 1960 and became a hit at parties.
+								</figcaption>
+							</div>
+							<div class="slide">
+								<img src="/images/pyrex5.jpg" class="image-slide" />
+								<figcaption>This image is a rare Blue Tulip pattern stacked on top of a
+									rare Pink Stems pattern. Blue Tulip was released in 1964 and
+									can only be found as a 1.5 qt oval casserole dish. The Pink
+									Stems also came in a casserole dish and sells for around $500.
+									A collector would be lucky to have any of these pieces.</figcaption>
+							</div>
+							<div class="slide">
+								<img src="/images/pyrex14.jpg" class="image-slide" />
+								<figcaption>
+									This is the Friendship pattern collection. It was manufactured
+									from 1971 to 1974 and included mixing bowls, a Cinderella
+									bowl, a Refrigerator set, and a Round Casserole set.
+								</figcaption>
+							</div>
 
-</body>
+							<a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+							<a class="next" onclick="changeSlide(1)">&#10095;</a>
+						</div>
+					</div>
+					<!--end light box-->
+				</div>
+			</div>
+			<footer>
+				<div class="footer-content">
+					<span> &copy Quinn Nilsson 2020</span>
+					<a href="https://www.facebook.com/quinn.nilsson" target="_blank">
+						<i id="social" class="fab fa-facebook"></i
+					></a>
+					<a href="https://github.com/QNilsson" target="_blank"
+						><i id="social" class="fab fa-github"></i
+					></a>
+					<a
+						href="https://www.instagram.com/dogs.andsometimesquinn/"
+						target="_blank"
+						><i id="social" class="fab fa-instagram"></i
+					></a>
+					<a
+						href="https://www.linkedin.com/in/quinn-nilsson-236825132/"
+						target="_blank"
+						><i id="social" class="fab fa-linkedin"></i
+					></a>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
