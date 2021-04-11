@@ -304,8 +304,9 @@ input[type='submit']:hover {
 .contact-social {
 	background-color: #f56a79;
 	margin-top: 100px;
-	padding-bottom: 200px;
+	padding-bottom: 180px;
 	padding-top: 30px;
+	margin-bottom: 100px;
 }
 .social-content {
 	margin: auto;
@@ -318,7 +319,7 @@ input[type='submit']:hover {
 	justify-content: space-between;
 }
 #social-icon {
-	font-size: 40px;
+	font-size: 45px;
 	color: white;
 }
 #social-icon:hover {
@@ -326,9 +327,9 @@ input[type='submit']:hover {
 }
 button {
 	background-color: #56ceba;
-	padding: 6px 20px 6px 20px;
+	padding: 10px 25px 10px 25px;
 	font-family: 'Crimson Text', serif;
-	font-size: 18px;
+	font-size: 20px;
 	border: 0;
 	color: white;
 	border-radius: 10%;
@@ -728,4 +729,5 @@ footer {
 	font-size: 22px;
 	color: white;
 	text-decoration: none;
+	padding-right: 5px;
 }
